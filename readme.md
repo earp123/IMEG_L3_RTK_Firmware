@@ -1,4 +1,4 @@
-# Firmware
+# IMEG L3 Surveyor
 
 This folder contains the Arduino sketches that make up the firmware that runs on the ESP32. Go [here](https://sparkfun.github.io/SparkFun_RTK_Firmware/firmware_update/#zed-f9x-firmware) for more information about the firmware that runs the ZED-F9x Receiver.
 
