@@ -352,7 +352,12 @@ void displayGUIdata()
   if (GUIpacket.lux<0){
     tft.print(" ... ");
   }
-  else tft.print(GUIpacket.lux, 1);
+  else{
+    float lux_raw = GUIpacket.lux;
+    //temp correction for the lensing. TODO create a setting to turn this on and off
+    float lux_lensed = lux_raw*3.5;
+    tft.print(lux_lensed, 1);
+  } 
   tft.println(" Lux");
   
 
